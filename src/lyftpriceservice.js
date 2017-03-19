@@ -13,8 +13,8 @@ module.exports = {
             }
         }
         function callback2(error, response, body){
-            info = JSON.parse(body);
-            for(i=0;i<info["cost_estimates"].length;i++){
+            var info = JSON.parse(body);
+            for(var i=0;i<info["cost_estimates"].length;i++){
                 info["cost_estimates"][i]["estimated_duration_seconds"] /= 60
                 var time = Math.ceil(info["cost_estimates"][i]["estimated_duration_seconds"])
                 info["cost_estimates"][i]["estimated_cost_avg"]  = (info["cost_estimates"][i]["estimated_cost_cents_max"]/100 + info["cost_estimates"][i]["estimated_cost_cents_min"]/100)/2
