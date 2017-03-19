@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/harshavamsi/ola-cli#readme",
   "dependencies": {
-    "request": "^2.81.0"
+    "cli-table": "^0.3.1",
+    "request": "^2.81.0",
+    "simple-oauth2": "^1.1.0"
   }
 }
