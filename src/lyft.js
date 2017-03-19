@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -11,6 +12,7 @@ var request = require('request')
 var location = require('./geolocation')
 var lyfttime = require('./lyfttimeservice')
 var lyftprice= require('./lyftpriceservice')
+
 access_token = ""
 cmd = process.argv[2]
 if(cmd == "time"){
@@ -18,6 +20,7 @@ address = process.argv[3]
 var add = address.split(' ').join('+');
 var address_list = add.split(",")
 }
+
 else if(cmd == 'price'){
     if(process.argv[3] == "-s"){
         if(process.argv[5] == "-e"){
@@ -40,6 +43,7 @@ else if(cmd == 'price'){
 else{
     console.log("Usage error")
 }
+
 const credentials = {
   client: {
     id: '6IdErdHhxMxx',
@@ -65,6 +69,7 @@ oauth2.clientCredentials.getToken(tokenConfig, (error, result) => {
   token = oauth2.accessToken.create(result);
   access_token = token["token"]["access_token"]
   bearer = "Bearer" + " " + access_token
+
 if(cmd == "time"){
 var data = location.get_coordinates(address_list[0],address_list[1],address_list[2])
 lyfttime.lyftservice(data[0],data[1],bearer)
@@ -78,5 +83,6 @@ lyftprice.lyftservice(start_data[0],start_data[1],end_data[0],end_data[1],bearer
 }
 else{
     console.log("Usage error")
+
 }
 });

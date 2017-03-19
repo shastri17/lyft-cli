@@ -1,3 +1,4 @@
+
 var sync = require('sync-request')
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
         var lat_data = lat;
         var long_data = lng;
         return [lat_data,long_data]
+
 
     }
 }
