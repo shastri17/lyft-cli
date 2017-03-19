@@ -1,4 +1,4 @@
-var request = require('request')
+
 var table = require('cli-table');
 var table = new table({
     head: ['Ride type', 'ETA']
@@ -72,3 +72,5 @@ if(cmd = "time"){
     request(google_payload, callback1)
 }
 });
+
+
