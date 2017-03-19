@@ -1,0 +1,22 @@
+{
+  "name": "ola-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshavamsi/ola-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshavamsi/ola-cli/issues"
+  },
+  "homepage": "https://github.com/harshavamsi/ola-cli#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
