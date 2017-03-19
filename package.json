@@ -1,5 +1,5 @@
 {
-  "name": "ola-cli",
+  "name": "lyft-cli",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,17 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harshavamsi/ola-cli.git"
+    "url": "git+https://github.com/hackinghulks/lyft-cli"
   },
-  "author": "",
+  "author": "The hacker bhais",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/harshavamsi/ola-cli/issues"
+    "url": "https://github.com/hackinghulks/lyft-cli/issues"
   },
-  "homepage": "https://github.com/harshavamsi/ola-cli#readme",
+  "homepage": "https://github.com/hackinghulks/lyft-cli#readme",
   "dependencies": {
     "cli-table": "^0.3.1",
     "request": "^2.81.0",
-    "simple-oauth2": "^1.1.0"
-  }
+    "simple-oauth2": "^1.1.0",
+    "sync-request": "^4.0.1"
+},
+  "engines": {
+  "node": ">=4.2.4"
+},
 }
