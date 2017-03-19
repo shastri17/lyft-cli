@@ -1,28 +1,31 @@
 {
-  "name": "lyft-terminal",
-  "version": "1.0.1",
-  "description": "",
-  "main": "src/lyft.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hackinghulks/lyft-cli"
-  },
-  "author": "The hacker bhais",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hackinghulks/lyft-cli/issues"
-  },
-  "homepage": "https://github.com/hackinghulks/lyft-cli#readme",
-  "dependencies": {
-    "cli-table": "^0.3.1",
-    "request": "^2.81.0",
-    "simple-oauth2": "^1.1.0",
-    "sync-request": "^4.0.1"
-},
-  "engines": {
-  "node": ">=4.2.4"
-}
+    "name": "lyft-terminal",
+    "version": "1.0.3",
+    "description": "",
+    "main": "src/lyft.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hackinghulks/lyft-cli"
+    },
+    "author": "The hacker bhais",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hackinghulks/lyft-cli/issues"
+    },
+    "homepage": "https://github.com/hackinghulks/lyft-cli#readme",
+    "dependencies": {
+        "cli-table": "^0.3.1",
+        "request": "^2.81.0",
+        "simple-oauth2": "^1.1.0",
+        "sync-request": "^4.0.1"
+    },
+    "engines": {
+        "node": ">=4.2.4"
+    },
+    "bin": {
+        "lyft": "src/lyft.js"
+    }
 }
