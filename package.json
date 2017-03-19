@@ -1,8 +1,8 @@
 {
-  "name": "lyft-cli",
-  "version": "1.0.0",
+  "name": "lyft-terminal",
+  "version": "1.0.1",
   "description": "",
-  "main": "main.js",
+  "main": "src/lyft.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +24,5 @@
 },
   "engines": {
   "node": ">=4.2.4"
-},
+}
 }
