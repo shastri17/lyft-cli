@@ -13,9 +13,9 @@ module.exports = {
             }
         }
         function callback2(error, response, body){
-            info = JSON.parse(body);
+            var info = JSON.parse(body);
 
-            for(i=0;i<info["eta_estimates"].length;i++){
+            for(var i=0;i<info["eta_estimates"].length;i++){
                 info["eta_estimates"][i]["eta_seconds"] /= 60
                 table.push([info["eta_estimates"][i]["ride_type"],info["eta_estimates"][i]["eta_seconds"] + " mins" ]);
         }
