@@ -22,8 +22,8 @@ var address_list = add.split(",")
 }
 
 else if(cmd == 'price'){
-    if(process.argv[2] == "-s"){
-        if(process.argv[4] == "-e"){
+    if(process.argv[3] == "-s"){
+        if(process.argv[5] == "-e"){
             var start_address = process.argv[4]
             var end_address = process.argv[6]
             var start_add = start_address.split(' ').join('+');
