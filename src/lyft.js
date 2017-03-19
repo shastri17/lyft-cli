@@ -14,18 +14,18 @@ var lyfttime = require('./lyfttimeservice')
 var lyftprice= require('./lyftpriceservice')
 
 access_token = ""
-cmd = process.argv[2]
+cmd = process.argv[1]
 if(cmd == "time"){
-address = process.argv[3]
+address = process.argv[2]
 var add = address.split(' ').join('+');
 var address_list = add.split(",")
 }
 
 else if(cmd == 'price'){
-    if(process.argv[3] == "-s"){
-        if(process.argv[5] == "-e"){
-            start_address = process.argv[4]
-            end_address = process.argv[6]
+    if(process.argv[2] == "-s"){
+        if(process.argv[4] == "-e"){
+            start_address = process.argv[3]
+            end_address = process.argv[5]
             var start_add = start_address.split(' ').join('+');
             var end_add = end_address.split(' ').join('+');
             var start_address_list = start_add.split(",")
