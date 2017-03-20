@@ -15,13 +15,13 @@ ___
 ```
 lyft time 'pickup address'
 ```
-![](./lyft-time.png)
+![](./assets/lyft-time.png)
 
 ### Get price estimates from source to destination
 ```
 lyft price -s 'pickup address' -e 'destination address'
 ```
-![](./lyft-price.png)
+![](./assets/lyft-price.png)
 ___
 ### Contributors
 [@shastri17](https://github.com/shastri17)
