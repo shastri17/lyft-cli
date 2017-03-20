@@ -1,7 +1,7 @@
 {
     "name": "lyft-terminal",
-    "version": "1.0.3",
-    "description": "",
+    "version": "1.1.0",
+    "description": "A cli for lyft.",
     "main": "src/lyft.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
